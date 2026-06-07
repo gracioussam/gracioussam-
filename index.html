@@ -1,10 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Website</title>
+    <title>My Personal Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px 10px;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: rgba(0,0,0,0.5);
+            border-radius: 10px;
+        }
+
+        .menu button {
+            padding: 10px 15px;
+            border: none;
+            background: white;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        h2 {
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello World!</h1>
-    <p>This is my first GitHub website.</p>
+
+<div class="overlay">
+
+    <!-- MENU -->
+    <div class="menu">
+        <div><b>My Portfolio</b></div>
+        <button onclick="alert('Menu clicked!')">☰ Menu</button>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Hi, I'm Samuel Adeyemi Ayomide</h1>
+        <p>Welcome to my personal website</p>
+    </div>
+
+    <div class="container">
+
+        <!-- ABOUT ME -->
+        <div class="box">
+            <h2>About Me</h2>
+            <p>
+                I am Samuel Adeyemi Ayomide, a student counsellor in the university of ilorin, passionate about helping people solve problems, my counselling services include Relationship counseling, marital and premarital counselling, career counselling among others. I'm also into web design,
+                technology, and building creative digital projects.
+            </p>
+        </div>
+
+        <!-- GOALS -->
+        <div class="box">
+            <h2>My Goals</h2>
+            <p>
+                My goal is to become a professional web developer and build websites
+                that solve real-world problems and help people.
+            </p>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="box">
+            <h2>Contact Me</h2>
+            <p><b>Email:</b> samsamoluwaseyi@gmail.com</p>
+            <p><b>Phone:</b> +2347013096090</p>
+        </div>
+
+    </div>
+
+</div>
+
 </body>
-</html>
+    </html>
